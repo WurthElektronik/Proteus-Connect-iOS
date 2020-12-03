@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F4598352511F52000FE915F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4598342511F52000FE915F /* AppDelegate.swift */; };
+		3F45983C2511F52000FE915F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F45983A2511F52000FE915F /* Main.storyboard */; };
+		3F45983E2511F52400FE915F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F45983D2511F52400FE915F /* Assets.xcassets */; };
+		3F4598412511F52400FE915F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F45983F2511F52400FE915F /* LaunchScreen.storyboard */; };
+		3F45984C2511F52400FE915F /* Proteus_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45984B2511F52400FE915F /* Proteus_ConnectTests.swift */; };
+		3F4598572511F52400FE915F /* Proteus_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4598562511F52400FE915F /* Proteus_ConnectUITests.swift */; };
+		3F4598782511FCBB00FE915F /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45986D2511FCBB00FE915F /* InformationViewController.swift */; };
+		3F4598792511FCBB00FE915F /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45986E2511FCBB00FE915F /* ScanViewController.swift */; };
+		3F45987A2511FCBB00FE915F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45986F2511FCBB00FE915F /* MainTabBarController.swift */; };
+		3F45987B2511FCBB00FE915F /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4598702511FCBB00FE915F /* PrivacyViewController.swift */; };
+		3F45987C2511FCBB00FE915F /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4598712511FCBB00FE915F /* MainNavigationController.swift */; };
+		3F45987E2511FCBB00FE915F /* InformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4598732511FCBB00FE915F /* InformationTableViewController.swift */; };
+		3F79161D2577BB46000F95A8 /* BluetoothSDK_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 3F79161C2577BB46000F95A8 /* BluetoothSDK_iOS */; };
+		3F8AC36C252EED0300A21A93 /* WebStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 3F8AC36B252EED0300A21A93 /* WebStyle.css */; };
+		3F8AC371252EED1D00A21A93 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8AC370252EED1D00A21A93 /* InfoViewController.swift */; };
+		6EA6B94A2518EA49007D37A2 /* TerminalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA6B9492518EA49007D37A2 /* TerminalViewController.swift */; };
+		6EB4E0D5252B20180028FFD4 /* AppUartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB4E0D4252B20180028FFD4 /* AppUartConfig.swift */; };
+		6EB4E0E9252F18920028FFD4 /* Imprint_EN.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EB4E0E8252F18920028FFD4 /* Imprint_EN.html */; };
+		6EB4E0F1252F18D10028FFD4 /* PrivacyPolicy_EN.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EB4E0F0252F18D00028FFD4 /* PrivacyPolicy_EN.html */; };
+		6EC9A30625372CAD0024CD82 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC9A30325372CAD0024CD82 /* AppSettings.swift */; };
+		6EC9A30725372CAD0024CD82 /* AppBleSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC9A30425372CAD0024CD82 /* AppBleSettings.swift */; };
+		6EC9A30C2537408F0024CD82 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC9A30B2537408F0024CD82 /* SettingsCell.swift */; };
+		6EC9A311253855130024CD82 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EC9A310253855120024CD82 /* SettingsCell.xib */; };
+		6EC9A3272547019A0024CD82 /* BleDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EC9A3262547019A0024CD82 /* BleDeviceCell.xib */; };
+		6EC9A32C254701A70024CD82 /* BleDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC9A32B254701A70024CD82 /* BleDeviceCell.swift */; };
+		6EC9A33425486DC60024CD82 /* RSSI+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC9A33325486DC60024CD82 /* RSSI+Extend.swift */; };
+		6EF16C78251CACDA00077AFD /* TerminalMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF16C77251CACDA00077AFD /* TerminalMessageCell.swift */; };
+		6EF16C7D251CADD700077AFD /* TerminalMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EF16C7C251CADD700077AFD /* TerminalMessageCell.xib */; };
+		6EF16C83251CB1DC00077AFD /* DataInterpretationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF16C82251CB1DC00077AFD /* DataInterpretationType.swift */; };
+		6EF16C89251CB3CF00077AFD /* TerminalMessageCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF16C88251CB3CF00077AFD /* TerminalMessageCellStyle.swift */; };
+		6EF16C96251CB53300077AFD /* IncomingBluetoothMessage+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF16C95251CB53300077AFD /* IncomingBluetoothMessage+Extend.swift */; };
+		6EF16C9B251CB67200077AFD /* DefaultTerminalMessageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF16C9A251CB67200077AFD /* DefaultTerminalMessageStyle.swift */; };
+		6EF16CA0251CB7F700077AFD /* OutgoingBluetoothMessage+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF16C9F251CB7F700077AFD /* OutgoingBluetoothMessage+Extend.swift */; };
+		6EF16CAB252491C100077AFD /* DemoBluetoothDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF16CAA252491C100077AFD /* DemoBluetoothDevice.swift */; };
+		6EF16CC62525C82300077AFD /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF16CC52525C82300077AFD /* KeyboardObserver.swift */; };
+		6EF16CCE2525FE7800077AFD /* Date+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF16CCD2525FE7800077AFD /* Date+Extend.swift */; };
+		6EF16CDB2526118F00077AFD /* InfoBluetoothMessage+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF16CDA2526118F00077AFD /* InfoBluetoothMessage+Extend.swift */; };
+		6EF16CE0252611E600077AFD /* TerminalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF16CDF252611E600077AFD /* TerminalMessage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F4598482511F52400FE915F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F4598292511F52000FE915F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F4598302511F52000FE915F;
+			remoteInfo = "Proteus Connect";
+		};
+		3F4598532511F52400FE915F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F4598292511F52000FE915F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F4598302511F52000FE915F;
+			remoteInfo = "Proteus Connect";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F4598312511F52000FE915F /* Proteus Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proteus Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4598342511F52000FE915F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F45983B2511F52000FE915F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F45983D2511F52400FE915F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F4598402511F52400FE915F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F4598422511F52400FE915F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4598472511F52400FE915F /* Proteus ConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Proteus ConnectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F45984B2511F52400FE915F /* Proteus_ConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proteus_ConnectTests.swift; sourceTree = "<group>"; };
+		3F45984D2511F52400FE915F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4598522511F52400FE915F /* Proteus ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Proteus ConnectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4598562511F52400FE915F /* Proteus_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proteus_ConnectUITests.swift; sourceTree = "<group>"; };
+		3F4598582511F52400FE915F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F45986D2511FCBB00FE915F /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		3F45986E2511FCBB00FE915F /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		3F45986F2511FCBB00FE915F /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		3F4598702511FCBB00FE915F /* PrivacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		3F4598712511FCBB00FE915F /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		3F4598732511FCBB00FE915F /* InformationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationTableViewController.swift; sourceTree = "<group>"; };
+		3F8AC36B252EED0300A21A93 /* WebStyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = WebStyle.css; sourceTree = "<group>"; };
+		3F8AC370252EED1D00A21A93 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		6EA6B9492518EA49007D37A2 /* TerminalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalViewController.swift; sourceTree = "<group>"; };
+		6EB4E0D4252B20180028FFD4 /* AppUartConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUartConfig.swift; sourceTree = "<group>"; };
+		6EB4E0E8252F18920028FFD4 /* Imprint_EN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Imprint_EN.html; sourceTree = "<group>"; };
+		6EB4E0F0252F18D00028FFD4 /* PrivacyPolicy_EN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PrivacyPolicy_EN.html; sourceTree = "<group>"; };
+		6EC9A30325372CAD0024CD82 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		6EC9A30425372CAD0024CD82 /* AppBleSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBleSettings.swift; sourceTree = "<group>"; };
+		6EC9A30B2537408F0024CD82 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		6EC9A310253855120024CD82 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
+		6EC9A3262547019A0024CD82 /* BleDeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BleDeviceCell.xib; sourceTree = "<group>"; };
+		6EC9A32B254701A70024CD82 /* BleDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleDeviceCell.swift; sourceTree = "<group>"; };
+		6EC9A33325486DC60024CD82 /* RSSI+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RSSI+Extend.swift"; sourceTree = "<group>"; };
+		6EF16C77251CACDA00077AFD /* TerminalMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalMessageCell.swift; sourceTree = "<group>"; };
+		6EF16C7C251CADD700077AFD /* TerminalMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TerminalMessageCell.xib; sourceTree = "<group>"; };
+		6EF16C82251CB1DC00077AFD /* DataInterpretationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInterpretationType.swift; sourceTree = "<group>"; };
+		6EF16C88251CB3CF00077AFD /* TerminalMessageCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalMessageCellStyle.swift; sourceTree = "<group>"; };
+		6EF16C95251CB53300077AFD /* IncomingBluetoothMessage+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IncomingBluetoothMessage+Extend.swift"; sourceTree = "<group>"; };
+		6EF16C9A251CB67200077AFD /* DefaultTerminalMessageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTerminalMessageStyle.swift; sourceTree = "<group>"; };
+		6EF16C9F251CB7F700077AFD /* OutgoingBluetoothMessage+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OutgoingBluetoothMessage+Extend.swift"; sourceTree = "<group>"; };
+		6EF16CAA252491C100077AFD /* DemoBluetoothDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBluetoothDevice.swift; sourceTree = "<group>"; };
+		6EF16CC52525C82300077AFD /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		6EF16CCD2525FE7800077AFD /* Date+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extend.swift"; sourceTree = "<group>"; };
+		6EF16CDA2526118F00077AFD /* InfoBluetoothMessage+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InfoBluetoothMessage+Extend.swift"; sourceTree = "<group>"; };
+		6EF16CDF252611E600077AFD /* TerminalMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalMessage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F45982E2511F52000FE915F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F79161D2577BB46000F95A8 /* BluetoothSDK_iOS in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4598442511F52400FE915F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F45984F2511F52400FE915F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F4598282511F52000FE915F = {
+			isa = PBXGroup;
+			children = (
+				3F4598332511F52000FE915F /* Proteus Connect */,
+				3F45984A2511F52400FE915F /* Proteus ConnectTests */,
+				3F4598552511F52400FE915F /* Proteus ConnectUITests */,
+				3F4598322511F52000FE915F /* Products */,
+				3F4598652511FC0300FE915F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F4598322511F52000FE915F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F4598312511F52000FE915F /* Proteus Connect.app */,
+				3F4598472511F52400FE915F /* Proteus ConnectTests.xctest */,
+				3F4598522511F52400FE915F /* Proteus ConnectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F4598332511F52000FE915F /* Proteus Connect */ = {
+			isa = PBXGroup;
+			children = (
+				6EF16C87251CB38500077AFD /* Extensions */,
+				6EF16C81251CB1A100077AFD /* Model */,
+				3F45986A2511FCBB00FE915F /* Ui */,
+				3F8AC36A252EECE200A21A93 /* Resources */,
+				6EC9A30125372C930024CD82 /* Config */,
+				3F4598342511F52000FE915F /* AppDelegate.swift */,
+				6EF16CAA252491C100077AFD /* DemoBluetoothDevice.swift */,
+				3F45983A2511F52000FE915F /* Main.storyboard */,
+				3F45983D2511F52400FE915F /* Assets.xcassets */,
+				3F45983F2511F52400FE915F /* LaunchScreen.storyboard */,
+				3F4598422511F52400FE915F /* Info.plist */,
+			);
+			path = "Proteus Connect";
+			sourceTree = "<group>";
+		};
+		3F45984A2511F52400FE915F /* Proteus ConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F45984B2511F52400FE915F /* Proteus_ConnectTests.swift */,
+				3F45984D2511F52400FE915F /* Info.plist */,
+			);
+			path = "Proteus ConnectTests";
+			sourceTree = "<group>";
+		};
+		3F4598552511F52400FE915F /* Proteus ConnectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F4598562511F52400FE915F /* Proteus_ConnectUITests.swift */,
+				3F4598582511F52400FE915F /* Info.plist */,
+			);
+			path = "Proteus ConnectUITests";
+			sourceTree = "<group>";
+		};
+		3F4598652511FC0300FE915F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F45986A2511FCBB00FE915F /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				6EF16C73251C741E00077AFD /* Cells */,
+				3F45986B2511FCBB00FE915F /* Controller */,
+				6EF16CC42525C7D200077AFD /* Helper */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		3F45986B2511FCBB00FE915F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F8AC370252EED1D00A21A93 /* InfoViewController.swift */,
+				3F45986D2511FCBB00FE915F /* InformationViewController.swift */,
+				3F45986E2511FCBB00FE915F /* ScanViewController.swift */,
+				3F45986F2511FCBB00FE915F /* MainTabBarController.swift */,
+				3F4598702511FCBB00FE915F /* PrivacyViewController.swift */,
+				3F4598712511FCBB00FE915F /* MainNavigationController.swift */,
+				3F4598732511FCBB00FE915F /* InformationTableViewController.swift */,
+				6EA6B9492518EA49007D37A2 /* TerminalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F8AC36A252EECE200A21A93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6EB4E0F0252F18D00028FFD4 /* PrivacyPolicy_EN.html */,
+				6EB4E0E8252F18920028FFD4 /* Imprint_EN.html */,
+				3F8AC36B252EED0300A21A93 /* WebStyle.css */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6EC9A30125372C930024CD82 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6EC9A30425372CAD0024CD82 /* AppBleSettings.swift */,
+				6EC9A30325372CAD0024CD82 /* AppSettings.swift */,
+				6EB4E0D4252B20180028FFD4 /* AppUartConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6EF16C73251C741E00077AFD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6EC9A3262547019A0024CD82 /* BleDeviceCell.xib */,
+				6EC9A32B254701A70024CD82 /* BleDeviceCell.swift */,
+				6EF16C77251CACDA00077AFD /* TerminalMessageCell.swift */,
+				6EF16C7C251CADD700077AFD /* TerminalMessageCell.xib */,
+				6EF16C88251CB3CF00077AFD /* TerminalMessageCellStyle.swift */,
+				6EF16C9A251CB67200077AFD /* DefaultTerminalMessageStyle.swift */,
+				6EF16CDF252611E600077AFD /* TerminalMessage.swift */,
+				6EC9A30B2537408F0024CD82 /* SettingsCell.swift */,
+				6EC9A310253855120024CD82 /* SettingsCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6EF16C81251CB1A100077AFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6EF16C82251CB1DC00077AFD /* DataInterpretationType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6EF16C87251CB38500077AFD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6EF16C95251CB53300077AFD /* IncomingBluetoothMessage+Extend.swift */,
+				6EF16CDA2526118F00077AFD /* InfoBluetoothMessage+Extend.swift */,
+				6EF16C9F251CB7F700077AFD /* OutgoingBluetoothMessage+Extend.swift */,
+				6EF16CCD2525FE7800077AFD /* Date+Extend.swift */,
+				6EC9A33325486DC60024CD82 /* RSSI+Extend.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6EF16CC42525C7D200077AFD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6EF16CC52525C82300077AFD /* KeyboardObserver.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F4598302511F52000FE915F /* Proteus Connect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F45985B2511F52400FE915F /* Build configuration list for PBXNativeTarget "Proteus Connect" */;
+			buildPhases = (
+				3F45982D2511F52000FE915F /* Sources */,
+				3F45982E2511F52000FE915F /* Frameworks */,
+				3F45982F2511F52000FE915F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Proteus Connect";
+			packageProductDependencies = (
+				3F79161C2577BB46000F95A8 /* BluetoothSDK_iOS */,
+			);
+			productName = "Proteus Connect";
+			productReference = 3F4598312511F52000FE915F /* Proteus Connect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F4598462511F52400FE915F /* Proteus ConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F45985E2511F52400FE915F /* Build configuration list for PBXNativeTarget "Proteus ConnectTests" */;
+			buildPhases = (
+				3F4598432511F52400FE915F /* Sources */,
+				3F4598442511F52400FE915F /* Frameworks */,
+				3F4598452511F52400FE915F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F4598492511F52400FE915F /* PBXTargetDependency */,
+			);
+			name = "Proteus ConnectTests";
+			productName = "Proteus ConnectTests";
+			productReference = 3F4598472511F52400FE915F /* Proteus ConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F4598512511F52400FE915F /* Proteus ConnectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F4598612511F52400FE915F /* Build configuration list for PBXNativeTarget "Proteus ConnectUITests" */;
+			buildPhases = (
+				3F45984E2511F52400FE915F /* Sources */,
+				3F45984F2511F52400FE915F /* Frameworks */,
+				3F4598502511F52400FE915F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F4598542511F52400FE915F /* PBXTargetDependency */,
+			);
+			name = "Proteus ConnectUITests";
+			productName = "Proteus ConnectUITests";
+			productReference = 3F4598522511F52400FE915F /* Proteus ConnectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F4598292511F52000FE915F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Würth Elektronik GmbH & Co. KG";
+				TargetAttributes = {
+					3F4598302511F52000FE915F = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					3F4598462511F52400FE915F = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 3F4598302511F52000FE915F;
+					};
+					3F4598512511F52400FE915F = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 3F4598302511F52000FE915F;
+					};
+				};
+			};
+			buildConfigurationList = 3F45982C2511F52000FE915F /* Build configuration list for PBXProject "Proteus Connect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F4598282511F52000FE915F;
+			packageReferences = (
+				3F79161B2577BB46000F95A8 /* XCRemoteSwiftPackageReference "BluetoothLE-SDK-Package-iOS" */,
+			);
+			productRefGroup = 3F4598322511F52000FE915F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F4598302511F52000FE915F /* Proteus Connect */,
+				3F4598462511F52400FE915F /* Proteus ConnectTests */,
+				3F4598512511F52400FE915F /* Proteus ConnectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F45982F2511F52000FE915F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4598412511F52400FE915F /* LaunchScreen.storyboard in Resources */,
+				6EF16C7D251CADD700077AFD /* TerminalMessageCell.xib in Resources */,
+				6EC9A3272547019A0024CD82 /* BleDeviceCell.xib in Resources */,
+				6EC9A311253855130024CD82 /* SettingsCell.xib in Resources */,
+				3F8AC36C252EED0300A21A93 /* WebStyle.css in Resources */,
+				3F45983E2511F52400FE915F /* Assets.xcassets in Resources */,
+				3F45983C2511F52000FE915F /* Main.storyboard in Resources */,
+				6EB4E0E9252F18920028FFD4 /* Imprint_EN.html in Resources */,
+				6EB4E0F1252F18D10028FFD4 /* PrivacyPolicy_EN.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4598452511F52400FE915F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4598502511F52400FE915F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F45982D2511F52000FE915F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA6B94A2518EA49007D37A2 /* TerminalViewController.swift in Sources */,
+				3F45987C2511FCBB00FE915F /* MainNavigationController.swift in Sources */,
+				6EF16C78251CACDA00077AFD /* TerminalMessageCell.swift in Sources */,
+				6EF16CE0252611E600077AFD /* TerminalMessage.swift in Sources */,
+				3F4598352511F52000FE915F /* AppDelegate.swift in Sources */,
+				6EF16C9B251CB67200077AFD /* DefaultTerminalMessageStyle.swift in Sources */,
+				6EF16CC62525C82300077AFD /* KeyboardObserver.swift in Sources */,
+				6EF16C96251CB53300077AFD /* IncomingBluetoothMessage+Extend.swift in Sources */,
+				3F45987B2511FCBB00FE915F /* PrivacyViewController.swift in Sources */,
+				6EF16C83251CB1DC00077AFD /* DataInterpretationType.swift in Sources */,
+				3F45987E2511FCBB00FE915F /* InformationTableViewController.swift in Sources */,
+				6EF16CDB2526118F00077AFD /* InfoBluetoothMessage+Extend.swift in Sources */,
+				3F45987A2511FCBB00FE915F /* MainTabBarController.swift in Sources */,
+				6EF16C89251CB3CF00077AFD /* TerminalMessageCellStyle.swift in Sources */,
+				3F4598782511FCBB00FE915F /* InformationViewController.swift in Sources */,
+				6EB4E0D5252B20180028FFD4 /* AppUartConfig.swift in Sources */,
+				6EF16CAB252491C100077AFD /* DemoBluetoothDevice.swift in Sources */,
+				6EC9A30C2537408F0024CD82 /* SettingsCell.swift in Sources */,
+				6EF16CCE2525FE7800077AFD /* Date+Extend.swift in Sources */,
+				3F4598792511FCBB00FE915F /* ScanViewController.swift in Sources */,
+				6EC9A30725372CAD0024CD82 /* AppBleSettings.swift in Sources */,
+				6EF16CA0251CB7F700077AFD /* OutgoingBluetoothMessage+Extend.swift in Sources */,
+				6EC9A30625372CAD0024CD82 /* AppSettings.swift in Sources */,
+				3F8AC371252EED1D00A21A93 /* InfoViewController.swift in Sources */,
+				6EC9A33425486DC60024CD82 /* RSSI+Extend.swift in Sources */,
+				6EC9A32C254701A70024CD82 /* BleDeviceCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4598432511F52400FE915F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F45984C2511F52400FE915F /* Proteus_ConnectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F45984E2511F52400FE915F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4598572511F52400FE915F /* Proteus_ConnectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F4598492511F52400FE915F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F4598302511F52000FE915F /* Proteus Connect */;
+			targetProxy = 3F4598482511F52400FE915F /* PBXContainerItemProxy */;
+		};
+		3F4598542511F52400FE915F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F4598302511F52000FE915F /* Proteus Connect */;
+			targetProxy = 3F4598532511F52400FE915F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F45983A2511F52000FE915F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F45983B2511F52000FE915F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F45983F2511F52400FE915F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F4598402511F52400FE915F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F4598592511F52400FE915F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F45985A2511F52400FE915F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F45985C2511F52400FE915F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = GRY582X635;
+				INFOPLIST_FILE = "Proteus Connect/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.we-online.ProteusConnect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Developer Profile Wuerth";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F45985D2511F52400FE915F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = GRY582X635;
+				INFOPLIST_FILE = "Proteus Connect/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.we-online.ProteusConnect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Developer Profile Wuerth";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F45985F2511F52400FE915F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Proteus ConnectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.we-online.Proteus-ConnectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Proteus Connect.app/Proteus Connect";
+			};
+			name = Debug;
+		};
+		3F4598602511F52400FE915F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Proteus ConnectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.we-online.Proteus-ConnectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Proteus Connect.app/Proteus Connect";
+			};
+			name = Release;
+		};
+		3F4598622511F52400FE915F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Proteus ConnectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.we-online.Proteus-ConnectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Proteus Connect";
+			};
+			name = Debug;
+		};
+		3F4598632511F52400FE915F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Proteus ConnectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.we-online.Proteus-ConnectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Proteus Connect";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F45982C2511F52000FE915F /* Build configuration list for PBXProject "Proteus Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4598592511F52400FE915F /* Debug */,
+				3F45985A2511F52400FE915F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F45985B2511F52400FE915F /* Build configuration list for PBXNativeTarget "Proteus Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F45985C2511F52400FE915F /* Debug */,
+				3F45985D2511F52400FE915F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F45985E2511F52400FE915F /* Build configuration list for PBXNativeTarget "Proteus ConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F45985F2511F52400FE915F /* Debug */,
+				3F4598602511F52400FE915F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F4598612511F52400FE915F /* Build configuration list for PBXNativeTarget "Proteus ConnectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4598622511F52400FE915F /* Debug */,
+				3F4598632511F52400FE915F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F79161B2577BB46000F95A8 /* XCRemoteSwiftPackageReference "BluetoothLE-SDK-Package-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WurthElektronik/BluetoothLE-SDK-Package-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F79161C2577BB46000F95A8 /* BluetoothSDK_iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F79161B2577BB46000F95A8 /* XCRemoteSwiftPackageReference "BluetoothLE-SDK-Package-iOS" */;
+			productName = BluetoothSDK_iOS;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3F4598292511F52000FE915F /* Project object */;
+}

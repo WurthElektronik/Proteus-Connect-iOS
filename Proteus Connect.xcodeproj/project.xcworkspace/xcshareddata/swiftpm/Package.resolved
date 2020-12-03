@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BluetoothSDK_iOS",
+        "repositoryURL": "https://github.com/WurthElektronik/BluetoothLE-SDK-Package-iOS",
+        "state": {
+          "branch": null,
+          "revision": "c9a50e9db470208ec0650035053437672eca5b5f",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

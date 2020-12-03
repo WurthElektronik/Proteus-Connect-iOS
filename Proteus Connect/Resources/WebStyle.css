@@ -1,0 +1,21 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+a:link {
+    color: rgb(224,36,29);
+    text-decoration: none;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(30,30,30);
+        color: white;
+    }
+    a:link {
+        color: rgb(255,67,49);
+    }
+    a:visited {
+        color: #9d57df;
+    }
+}
