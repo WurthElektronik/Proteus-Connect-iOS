@@ -9,7 +9,7 @@ License Terms: Please refer to the pdf file "license_terms_Proteus-Connect_iOS_s
 
 
 ## General information
-This iOS app and sorucecodes are developed by Würth Elektronik eiSos is intended to show how to send ASCII or HEX payload to connected Proteus radio module using the Bluetooth Low Energy Standard. Currently the app is under development, which means that bugs might occur. Additional features and updates will be released as they are developed.
+This iOS app and sorucecodes are developed by Würth Elektronik eiSos is intended to show how to send ASCII or HEX payload to connected Proteus radio module using the Bluetooth Low Energy Standard. Additional features and updates will be released as they are developed.
 Features
 -	A library for iOS devices to communicate with Proteus Bluetooth modules.
 -	Contains sample project to get started out of the box. 
