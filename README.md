@@ -1,3 +1,17 @@
+# Proteus Connect iOS (Archive)
+
+July 2023 - Note: This SDK is now in status "archive" and will not be continued or maintained. Please refer to https://github.com/WurthElektronik/Proteus-Connect for the successor, which is a cross plattform project supporting Android and iOS as well as web-app.
+
+The App will also switch over to the new project starting with version 1.4 of the app release.
+
+
+-----------------
+Archived
+-----------------
+
+
+
+
 # Proteus-Connect-iOS Starter Guide
 Würth Elektronik eiSos GmbH & Co. KG
 
